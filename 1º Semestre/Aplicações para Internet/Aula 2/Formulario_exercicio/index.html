@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Formulários</title>
+		<style>
+			body {
+				background-color: lightblue;
+				padding-top: 20px;
+				font-family: sans-serif;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<h1>Formulário de Inscrição</h1>
+
+
+		<form>
+			<label for="n">Nome</label>
+			<input type="text" id="n" name="nome"
+			placeholder="Digite o seu nome">
+			<!-- for (def. visuais) e name vamos usar no futuro -->
+			<br>
+			<br>
+			
+			<!-- sempre o que vem no label for tem que ser o mesmo que for id? -->
+
+			<label for="e">E-mail</label>
+			<input type="email" id="e" name="email"
+			placeholder="Digite o seu e-mail">
+
+			<label for="i">Idade</label>
+			<input type="number" id="i" name="idade" min="1" max="130">
+
+			<label for="d">Data de Nascimento</label>
+			<input type="date" id="d" name="data" min="1" max="130">
+			<br>
+			<br>
+			
+			<label for="g">Gênero:</label>
+			<label><input type="radio" name="genero" value="masculino"> masculino</label>
+			<label><input type="radio" name="genero" value="feminino"> feminino</label>
+			<label><input type="radio" name="genero" value="outros"> outros</label>
+
+			<br><br>
+			<label>Esportes:</label>
+			<label><input type="checkbox" name="esporte" value="Futebol"> Futebol</label>
+			<label><input type="checkbox" name="esporte" value="Natação"> Natação</label>
+			<label><input type="checkbox" name="esporte" value="Ciclismo"> Ciclismo</label>
+			<label><input type="checkbox" name="esporte" value="Atletismo"> Atletismo</label>
+			
+			<br><br>
+			
+			<label for="a">Arquivo</label>
+			<input type="file"name="arquivo">
+
+			<br><br>
+
+			<label for="u">UF</label>
+			<select name="uf" id="u">
+				<option value="AC">AL</option>
+				<option value="AL">AL</option>
+				<option value="AM">AM</option>
+				<option value="AP">AP</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MG">MG</option>
+				<option value="MS">MS</option>
+				<option value="MT">MT</option>
+				<option value="DF">PA</option>
+				<option value="ES">PB</option>
+				<option value="GO">PE</option>
+				<option value="MA">PI</option>
+				<option value="MG">PR</option>
+				<option value="MS">RJ</option>
+				<option value="MT">RN</option>
+				<option value="GO">RO</option>
+				<option value="MA">RR</option>
+				<option value="MG">RS</option>
+				<option value="MS">SC</option>
+				<option value="MT">SE</option>
+				<option value="MS">SP</option>
+				<option value="MT">TO</option>
+
+			</select>
+
+			<br> <br><br>
+
+			<label for="m"> Mensagem: </label><br>
+			<textarea name="mensagem" id="m" cols="30" rows="5"></textarea>
+
+			<br> <br><br>
+
+			<button type="reset">Limpar</button>
+			<button type="submit">Enviar</button>
+
+
+		</form>
+
+
+	</body>
+
+	</body>
+
+	</html>
