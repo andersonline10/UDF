@@ -5,17 +5,17 @@ pessoas e ao final apresentar a média de idade de ambos os gêneros catalogados. 
 #include <stdio.h>
 
 int  main(){
-	int contador=1, sexo, idade, pessoas, rodada=1, soma_idade_masc = 0, soma_idade_fem = 0, soma_sexo_masc = 0, soma_sexo_fem = 0;
+	int qtdade, sexo, idade, pessoas, contador=1, soma_idade_masc = 0, soma_idade_fem = 0, soma_sexo_masc = 0, soma_sexo_fem = 0;
 	
 	printf("Informe a quantidade de pessoas: ");
-	scanf("%d", &contador);
+	scanf("%d", &qtdade);
 	
-	while(rodada <= contador){
-		printf("Informe o sexo da %da pessoa (1-masculino 2-feminino): ", rodada);
+	while(contador <= qtdade){
+		printf("Informe o sexo da %da pessoa (1-masculino 2-feminino): ", contador);
 		scanf("%d", &sexo);
-		printf("Informe a a idade da %da pessoa: ", rodada);
+		printf("Informe a a idade da %da pessoa: ", contador);
 		scanf("%d", &idade);
-		rodada++;
+		contador++;
 		
 		if (sexo == 1){	
 			soma_idade_masc = soma_idade_masc + idade;
