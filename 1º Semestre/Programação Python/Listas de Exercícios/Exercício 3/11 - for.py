@@ -12,7 +12,7 @@ num = int(input("Informe o 1o número: "))
 soma = soma + num
 contador += 1
 
-for contador in range(contador, qtdade + 1):
+for qtdade in range(contador, qtdade + 1):
     num = int(input(f"Informe o {contador}o número: "))
     soma = soma + num
     media = soma / qtdade
